@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="Booking_Flight.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Booking_Flight"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <AcrylicBrush TintColor="#CCE2CFCF"/>
+        </Grid.Background>
+        <Grid.FocusVisualPrimaryBrush>
+            <AcrylicBrush TintColor="#CCECE5E5"/>
+        </Grid.FocusVisualPrimaryBrush>
+        <TextBlock HorizontalAlignment="Left" Margin="458,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="672" FontSize="60" FontWeight="Bold" FontFamily="Algerian" FocusVisualPrimaryBrush="#FFD25E5E"><Run Text="   "/><Run Text="Air International"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="567,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="99" RenderTransformOrigin="-1.3,-0.028" Width="449" FontSize="40" FontWeight="Bold" Text="   Book a flight today" FocusVisualPrimaryBrush="#FFB11919"/>
+        <TextBlock HorizontalAlignment="Left" Margin="496,288,0,0" TextWrapping="Wrap" Text="Full Name" VerticalAlignment="Top" Height="50" Width="215" FontSize="30" RenderTransformOrigin="0.492,2.668"/>
+        <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="750,288,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="376" Height="50" FontSize="30" PlaceholderText="FirstName LastName"/>
+        <TextBlock HorizontalAlignment="Left" Margin="496,364,0,0" TextWrapping="Wrap" Text="Trip Type" VerticalAlignment="Top" Height="50" Width="215" FontSize="30"/>
+        <RadioButton Content="One- Way" Margin="750,364,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.516,-1.104" Height="50" Width="176" FontSize="30" IsChecked="True" Checked="RadioButton_Checked_1"/>
+        <RadioButton Content="Two- Way" Margin="950,364,0,0" Checked="RadioButton_Checked" FontSize="30" Height="50" Width="176" VerticalAlignment="Top"/>
+        <TextBox x:Name="userFrom" HorizontalAlignment="Left" Margin="750,443,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="50" Width="376" FontSize="30" PlaceholderText="Toronto , ON"/>
+        <TextBlock HorizontalAlignment="Left" Margin="496,443,0,0" TextWrapping="Wrap" Text="From" VerticalAlignment="Top" Height="50" Width="215" FontSize="30" SelectionChanged="TextBlock_SelectionChanged_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="496,518,0,0" TextWrapping="Wrap" Text="To" VerticalAlignment="Top" Height="50" Width="215" FontSize="30"/>
+        <TextBox x:Name="userTo" HorizontalAlignment="Left" Margin="750,518,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="376" Height="50" FontSize="30" PlaceholderText="Vancouver, BC"/>
+        <TextBlock HorizontalAlignment="Left" Margin="496,599,0,0" TextWrapping="Wrap" Text="Departure Date" VerticalAlignment="Top" Height="50" Width="215" FontSize="30" RenderTransformOrigin="0.512,1.091"/>
+        <CalendarDatePicker Margin="750,599,0,0" VerticalAlignment="Top" Width="376" Height="50" PlaceholderText="Select departure date" FontSize="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="496,690,0,0" TextWrapping="Wrap" Text="Passenger(s)" VerticalAlignment="Top" Height="50" Width="215" FontSize="30"/>
+        <TextBox x:Name="userPassengers" HorizontalAlignment="Left" Margin="750,690,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="376" Height="50" FontSize="30" PlaceholderText="# of Passenger(s)" InputScope="NumericPin"/>
+        <Button x:Name="OK" Content="Submit" Margin="0,793,0,0" VerticalAlignment="Top" Width="231" Height="60" FontSize="35" HorizontalAlignment="Center" Click="okClick">
+            <Button.Background>
+                <AcrylicBrush TintColor="#CCED5D5D"/>
+            </Button.Background>
+        </Button>
+
+    </Grid>
+</Page>
